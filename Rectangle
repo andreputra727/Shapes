@@ -1,0 +1,32 @@
+package praktik.geometry.shapes2;
+
+public class Rectangle {
+    private final int id;
+    private final double panjang;
+    private final double lebar;
+
+    public Rectangle(int id, double panjang, double lebar) {
+        this.id = id;
+        this.panjang = panjang;
+        this.lebar = lebar;
+    }
+
+    public double getKeliling() {
+        return 2 * (panjang + lebar);
+    }
+
+    public double getLuas() {
+        return panjang * lebar;
+    }
+
+    public void printDeskripsi() {
+        System.out.println("====================================");
+        System.out.println("ID       : " + id);
+        System.out.println("Panjang  : " + panjang);
+        System.out.println("Lebar    : " + lebar);
+        System.out.println("Keliling : " + getKeliling());
+        System.out.println("Luas     : " + getLuas());
+        System.out.println("====================================");
+    }
+}
+
